@@ -16,7 +16,6 @@
                 <div class="col-12">
                     <div class="row justify-content-center ">
                         <div class="col-lg-6 text-center ">
-                            <a href="<?= base_url('assets/images/imtihan.mp4'); ?>" data-fancybox data-aos="fade-up" data-aos-delay="0" class="caption mb-4 d-inline-block">Lihat Vidio</a>
                             <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Selamat Datang Di Website <br> <span class="text-secondary">RA & MI Nurur Rahmah</span> </h1>
                         </div>
                     </div>
