@@ -31,6 +31,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Foto</th>
+                                <th>Deskripsi</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -40,8 +41,9 @@
                                 <tr>
                                     <td><?= $no++ ?></td>
                                     <td> <img class="rounded" width="150" src="<?= base_url("uploads/$item->foto") ?>" alt=""></td>
+                                    <td><?= $item->deskripsi ?></td>
                                     <td>
-                                        <?php $params = "[`$item->id_galeri`]" ?>
+                                        <?php $params = "[`$item->id_galeri`,`$item->deskripsi`]" ?>
                                         <button type="button" class="btn btn-icon btn-round btn-success" data-bs-toggle="modal" data-bs-target="#modal_form" onclick="setForm('edit',<?= $params ?>)">
                                             <i class="far fa-edit"></i>
                                         </button>
@@ -70,6 +72,10 @@
                         <div class="row g-3">
                             <input name="id_galeri" id="id_galeri" hidden>
                             <div class="form-group col-12">
+                                <label for="deskripsi" class="form-label">Deskripsi</label>
+                                <input type="text" name="deskripsi" id="deskripsi" class="form-control" required>
+                            </div>
+                            <div class="form-group col-12">
                                 <label for="foto" class="form-label">Upload Foto</label>
                                 <input type="file" name="foto" id="foto" class="form-control" required accept="image/*">
                             </div>
@@ -91,7 +97,7 @@
 
         const setForm = (title, data) => {
             modal_form.querySelector('form').setAttribute('action', `<?= base_url('galeri') ?>/${title}`);
-            const fields = ['id_galeri'];
+            const fields = ['id_galeri', 'deskripsi'];
             fields.forEach((e, i) => {
                 const element = modal_form.querySelector(`#${e}`);
                 element.value = title === 'insert' ? '' : data[i];

@@ -44,11 +44,20 @@
                     </a>
                 </li>
                 <li class="nav-section">
+                    <h4 class="text-section">PPDB</h4>
+                </li>
+                <li class="nav-item <?= $title == "PPDB" ? "active" : ""; ?>">
+                    <a href="<?= base_url("ppdb"); ?>">
+                        <i class="far fa-user"></i>
+                        <p>PPDB</p>
+                    </a>
+                </li>
+                <li class="nav-section">
                     <h4 class="text-section">Akun</h4>
                 </li>
                 <li class="nav-item <?= $title == "User" ? "active" : ""; ?>">
                     <a href="<?= base_url("user"); ?>">
-                        <i class="fas fa-user"></i>
+                        <i class="fas fa-users"></i>
                         <p>Setting User</p>
                     </a>
                 </li>

@@ -19,6 +19,7 @@ class Galeri extends CI_Controller
 
 	public function insert()
 	{
+		$data['deskripsi'] = $this->input->post('deskripsi');
 		$data['foto'] = upload_file('foto');
 		$this->base_model->insert('galeri', $data);
 		redirect('galeri');
@@ -31,6 +32,7 @@ class Galeri extends CI_Controller
 		$foto = $this->base_model->get_one_data_by('galeri', 'id_galeri', $id_galeri)->foto;
 
 		unlink("./uploads/$foto");
+		$data['deskripsi'] = $this->input->post('deskripsi');
 		$data['foto'] = upload_file('foto');
 
 		$this->base_model->update('galeri', $data, $id_galeri);

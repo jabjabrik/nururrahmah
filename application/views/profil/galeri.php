@@ -33,6 +33,7 @@
                 <?php foreach ($galeri as $item): ?>
                     <a href="<?= base_url("uploads/$item->foto") ?>" class="col-md-6 col-lg-4 item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up" data-aos-delay="0">
                         <img class="rounded shadow-sm" style="width: 300px; height: 300px; object-fit: cover;" src="<?= base_url("uploads/$item->foto") ?>">
+                        <p class="text-white mt-3 text-center"><?= $item->deskripsi ?></p>
                     </a>
                 <?php endforeach; ?>
             </div>

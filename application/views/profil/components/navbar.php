@@ -32,7 +32,7 @@
                 <img src="" alt="">
                 <a href="<?= base_url('profil/beranda'); ?>" class="logo menu-absolute m-0">
                     <img src="<?= base_url('assets/images/logo.png'); ?>" height="35" width="35" alt="">
-                    RA & MI Nurur Rahmah
+                    MI Nurur Rahmah
                 </a>
                 <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
                     <li class="<?= $title == 'Beranda' ? 'active' : ''; ?>"><a href="<?= base_url('profil/beranda'); ?>">Beranda</a></li>
@@ -40,6 +40,13 @@
                     <li class="<?= $title == 'Visi & Misi' ? 'active' : ''; ?>"><a href="<?= base_url('profil/visimisi'); ?>">Visi & Misi</a></li>
                     <li class="<?= $title == 'Galeri' ? 'active' : ''; ?>"><a href="<?= base_url('profil/galeri'); ?>">Galeri</a></li>
                     <li class="<?= $title == 'Alamat' ? 'active' : ''; ?>"><a href="<?= base_url('profil/alamat'); ?>">Alamat</a></li>
+                    <li class="has-children">
+                        <a href="#">PPDB</a>
+                        <ul class="dropdown">
+                            <li><a href="<?= base_url('profil/pendaftaran'); ?>">Pendafataran</a></li>
+                            <li><a href="<?= base_url('profil/pengumuman'); ?>">Pengumuman</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
                     <span></span>
