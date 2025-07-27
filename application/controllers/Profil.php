@@ -55,6 +55,8 @@ class Profil extends CI_Controller
 
 	public function pendaftaran()
 	{
+		$ppdb = $this->db->get('informasi')->row('ppdb');
+		if ($ppdb == '0') redirect('profil');
 		$data['title'] = 'Pendaftaran';
 		$data["informasi"] = $this->informasi;
 		$this->load->view('profil/pendaftaran', $data);
@@ -124,6 +126,8 @@ class Profil extends CI_Controller
 
 	public function pengumuman()
 	{
+		$ppdb = $this->db->get('informasi')->row('ppdb');
+		if ($ppdb == '0') redirect('profil');
 		$data['title'] = 'Pengumuman';
 		$data['pengumuman'] = $this->db->query("SELECT * FROM siswa WHERE status_diterima IS NOT NULL")->result();
 		$data["informasi"] = $this->informasi;

@@ -2,7 +2,7 @@
     <div class="sidebar-logo">
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
-            <a href="<?= base_url("dashboard"); ?>" class="logo">
+            <a href="<?= base_url("informasi"); ?>" class="logo">
                 <img src="<?= base_url("assets/images/logo.png") ?>" alt="navbar brand" class="navbar-brand" height="50" />
             </a>
             <div class="nav-toggle">
@@ -46,10 +46,16 @@
                 <li class="nav-section">
                     <h4 class="text-section">PPDB</h4>
                 </li>
-                <li class="nav-item <?= $title == "PPDB" ? "active" : ""; ?>">
+                <li class="nav-item <?= $title == "Pendaftaran PPDB" ? "active" : ""; ?>">
                     <a href="<?= base_url("ppdb"); ?>">
                         <i class="far fa-user"></i>
-                        <p>PPDB</p>
+                        <p>Pendaftaran PPDB</p>
+                    </a>
+                </li>
+                <li class="nav-item <?= $title == "Pengumuman PPDB" ? "active" : ""; ?>">
+                    <a href="<?= base_url("ppdb/pengumuman"); ?>">
+                        <i class="far fa-bookmark"></i>
+                        <p>Pengumuman PPDB</p>
                     </a>
                 </li>
                 <li class="nav-section">

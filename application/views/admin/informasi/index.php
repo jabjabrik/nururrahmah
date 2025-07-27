@@ -57,6 +57,13 @@
                                 <label for="alamat" class="form-label fw-bold">Alamat</label>
                                 <textarea name="alamat" id="alamat" rows="4" class="form-control" required><?= $informasi_sekolah->alamat ?></textarea>
                             </div>
+                            <div class="mb-3">
+                                <label for="ppdb" class="form-label fw-bold">Status PPPDB</label>
+                                <select name="ppdb" id="ppdb" class="form-control" required>
+                                    <option value="1" <?= $informasi_sekolah->ppdb == '1' ? 'selected' : '' ?>>PPDB dibuka</option>
+                                    <option value="0" <?= $informasi_sekolah->ppdb == '0' ? 'selected' : '' ?>>PPDB ditutup</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="text-end">
                             <button type="submit" class="btn btn-primary">Update Informasi</button>

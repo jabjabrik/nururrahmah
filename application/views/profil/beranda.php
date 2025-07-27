@@ -16,7 +16,7 @@
                 <div class="col-12">
                     <div class="row justify-content-center ">
                         <div class="col-lg-6 text-center ">
-                            <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Selamat Datang Di Website <br> <span class="text-secondary">RA & MI Nurur Rahmah</span> </h1>
+                            <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Selamat Datang Di Website <br> <span class="text-secondary">MI Nurur Rahmah</span> </h1>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="section-title mb-3" data-aos="fade-up" data-aos-delay="0">
-                        <h2 class="line-bottom mb-4">RA & MI Nurur Rahmah</h2>
+                        <h2 class="line-bottom mb-4">MI Nurur Rahmah</h2>
                     </div>
                     <p data-aos="fade-up" style="color: #d8d8d8; font-size: 1em; text-align: justify;" data-aos-delay="100">MI Nurur Rahma adalah madrasah ibtidaiyah yang berkomitmen memberikan pendidikan berkualitas dengan mengintegrasikan nilai-nilai keislaman dalam kurikulum. Sekolah ini tidak hanya fokus pada akademik, tetapi juga membentuk karakter siswa yang religius, disiplin, dan berakhlak mulia.</p>
                     <p data-aos="fade-up" style="color: #d8d8d8; font-size: 1em; text-align: justify;" data-aos-delay="100">MI Nurur Rahma tidak hanya memberikan pendidikan akademik, tetapi juga menanamkan nilai-nilai moral dan sosial kepada siswa. Dengan lingkungan belajar yang nyaman dan guru yang berdedikasi, sekolah ini berupaya menciptakan generasi yang cerdas, beriman, dan siap menghadapi masa depan.</p>
@@ -107,7 +107,7 @@
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-lg-7">
                     <h2 class="text-white mb-3" data-aos="fade-up" data-aos-delay="0">Masa depan cerah dimulai dari sini!</h2>
-                    <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">Daftar sekarang di RA & MI Nurur Rahmah. Dengan pendidikan berkualitas yang kami berikan, kamu akan memiliki bekal yang kuat untuk meraih cita-citamu.</p>
+                    <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">Daftar sekarang di MI Nurur Rahmah. Dengan pendidikan berkualitas yang kami berikan, kamu akan memiliki bekal yang kuat untuk meraih cita-citamu.</p>
                     <p><a href="<?= "https://wa.me/$informasi->no_telepon" ?>" target="_blank" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="200">Hubungi Kami</a></p>
                 </div>
             </div>

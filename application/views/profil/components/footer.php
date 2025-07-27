@@ -61,7 +61,7 @@
             <div class="col-12 text-center">
                 <p>&copy;Copyright <script>
                         document.write(new Date().getFullYear());
-                    </script> RA & MI Nurur Rahmah.
+                    </script> MI Nurur Rahmah.
                     <br>
                     Design By: <a href="https://www.instagram.com/i.m.f_23?igsh=MTlheDQzbWdzODNxdg==" target="_blank" style="color: #d4d400;">Idya M.F.</a>
                 </p>

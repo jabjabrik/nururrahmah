@@ -16,9 +16,9 @@
                 <div class="col-12">
                     <div class="row justify-content-center ">
                         <div class="col-lg-6 text-center ">
-                            <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Galeri <br> <span style="color: #d4d400;">RA & MI Nurur Rahmah</span></h1>
+                            <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Galeri <br> <span style="color: #d4d400;">MI Nurur Rahmah</span></h1>
                             <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
-                                <p>Momen-momen berharga di RA & MI Nurur Rahmah! Di sini, proses belajar mengajar serta kegiatan lainnya berlangsung menyenangkan dan penuh semangat.</p>
+                                <p>Momen-momen berharga di MI Nurur Rahmah! Di sini, proses belajar mengajar serta kegiatan lainnya berlangsung menyenangkan dan penuh semangat.</p>
                             </div>
                         </div>
                     </div>

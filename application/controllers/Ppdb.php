@@ -12,9 +12,17 @@ class Ppdb extends CI_Controller
 
 	public function index()
 	{
-		$data['title'] = 'PPDB';
+		$data['title'] = 'Pendaftaran PPDB';
 		$data['data_result'] = $this->base_model->get_all('siswa');
 		$this->load->view('admin/ppdb/index', $data);
+	}
+
+	public function pengumuman()
+	{
+		$data['title'] = 'Pengumuman PPDB';
+		$this->db->where_in('status_diterima', ['diterima', 'tidak diterima']);
+		$data['data_result'] = $this->db->get('siswa')->result();
+		$this->load->view('admin/ppdb/pengumuman', $data);
 	}
 
 	public function penerimaan($status_diterima, $id_siswa)

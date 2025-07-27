@@ -19,7 +19,7 @@
                 <div class="page-inner">
                     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
                         <div>
-                            <h3 class="fw-bold mb-3">PPDB</h3>
+                            <h3 class="fw-bold mb-3">Pendaftaran PPDB</h3>
                         </div>
                     </div>
                     <div class="table-responsive">
@@ -88,8 +88,8 @@
                                         <td><?= $item->nama_ibu ?></td>
                                         <td><?= $item->pekerjaan_ibu ?></td>
                                         <td><?= $item->pendidikan_ortu ?></td>
-                                        <td><?= $item->penghasilan_ayah ?></td>
-                                        <td><?= $item->penghasilan_ibu ?></td>
+                                        <td><?= number_format($item->penghasilan_ayah, 0, ',', '.');  ?></td>
+                                        <td><?= number_format($item->penghasilan_ibu, 0, ',', '.');  ?></td>
                                         <td><?= $item->nama_ayah_wali ?></td>
                                         <td><?= $item->nama_ibu_wali ?></td>
                                         <td><?= $item->pekerjaan_wali ?></td>

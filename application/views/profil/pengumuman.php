@@ -48,7 +48,7 @@
                         <div class="col-lg-6 text-center">
                             <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Pengumuman <br> <span style="color: #d4d400;">Penerimaan Siswa</span></h1>
                             <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
-                                <p>Hasil seleksi penerimaan siswa baru RA & MI Nurur Rahmah</p>
+                                <p>Hasil seleksi penerimaan siswa baru MI Nurur Rahmah</p>
                             </div>
                         </div>
                     </div>

@@ -29,7 +29,10 @@ class Informasi extends CI_Controller
 			"visi" => $this->input->post("visi"),
 			"misi" => $this->input->post("misi"),
 			"alamat" => $this->input->post("alamat"),
+			"ppdb" => $this->input->post("ppdb"),
 		];
+
+		// dd($data);
 
 		$this->base_model->update('informasi', $data, $id_informasi);
 		redirect('informasi');

@@ -40,7 +40,11 @@
                     <li class="<?= $title == 'Visi & Misi' ? 'active' : ''; ?>"><a href="<?= base_url('profil/visimisi'); ?>">Visi & Misi</a></li>
                     <li class="<?= $title == 'Galeri' ? 'active' : ''; ?>"><a href="<?= base_url('profil/galeri'); ?>">Galeri</a></li>
                     <li class="<?= $title == 'Alamat' ? 'active' : ''; ?>"><a href="<?= base_url('profil/alamat'); ?>">Alamat</a></li>
-                    <li class="has-children">
+                    <?php
+                    $CI = &get_instance();
+                    $ppdb = $CI->db->get('informasi')->row('ppdb');
+                    ?>
+                    <li class="has-children" <?= $ppdb ? '' : 'hidden' ?>>
                         <a href="#">PPDB</a>
                         <ul class="dropdown">
                             <li><a href="<?= base_url('profil/pendaftaran'); ?>">Pendafataran</a></li>

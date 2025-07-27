@@ -60,7 +60,7 @@
                 <div class="col-12">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Formulir <br> <span style="color: #d4d400;">Pendaftaran RA & MI Nurur Rahmah</span></h1>
+                            <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">Formulir <br> <span style="color: #d4d400;">Pendaftaran MI Nurur Rahmah</span></h1>
                             <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
                                 <p>Isi data dengan lengkap dan benar</p>
                             </div>
@@ -203,28 +203,12 @@
                         </div>
                         <div class="col-md-6">
                             <label for="penghasilan_ayah" class="form-label">Penghasilan Ayah</label>
-                            <select class="form-control" id="penghasilan_ayah" name="penghasilan_ayah" required>
-                                <option value="">Pilih...</option>
-                                <option value="< 1 juta">
-                                    < 1 juta</option>
-                                <option value="1-3 juta">1-3 juta</option>
-                                <option value="3-5 juta">3-5 juta</option>
-                                <option value="5-10 juta">5-10 juta</option>
-                                <option value="> 10 juta">> 10 juta</option>
-                            </select>
+                            <input type="number" class="form-control" id="penghasilan_ayah" name="penghasilan_ayah" required>
+
                         </div>
                         <div class="col-md-6">
                             <label for="penghasilan_ibu" class="form-label">Penghasilan Ibu</label>
-                            <select class="form-control" id="penghasilan_ibu" name="penghasilan_ibu">
-                                <option value="">Pilih...</option>
-                                <option value="< 1 juta">
-                                    < 1 juta</option>
-                                <option value="1-3 juta">1-3 juta</option>
-                                <option value="3-5 juta">3-5 juta</option>
-                                <option value="5-10 juta">5-10 juta</option>
-                                <option value="> 10 juta">> 10 juta</option>
-                                <option value="Tidak Bekerja">Tidak Bekerja</option>
-                            </select>
+                            <input type="number" class="form-control" id="penghasilan_ibu" name="penghasilan_ibu" required>
                         </div>
                     </div>
 
@@ -257,15 +241,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="penghasilan_wali" class="form-label">Penghasilan Wali</label>
-                            <select class="form-control" id="penghasilan_wali" name="penghasilan_wali">
-                                <option value="">Pilih...</option>
-                                <option value="< 1 juta">
-                                    < 1 juta</option>
-                                <option value="1-3 juta">1-3 juta</option>
-                                <option value="3-5 juta">3-5 juta</option>
-                                <option value="5-10 juta">5-10 juta</option>
-                                <option value="> 10 juta">> 10 juta</option>
-                            </select>
+                            <input type="number" class="form-control" id="penghasilan_wali" name="penghasilan_wali" required>
                         </div>
                     </div>
 
