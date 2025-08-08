@@ -58,6 +58,7 @@
                                     <th>Akta</th>
                                     <th>KK</th>
                                     <th>KTP Ortu</th>
+                                    <th>Tahun Ajaran</th>
                                     <th>Status</th>
                                     <th>Tanggal Diterima</th>
                                     <th>Aksi</th>
@@ -99,9 +100,13 @@
                                         <td><a target="_blank" href="<?= base_url("uploads/$item->akta_kelahiran"); ?>">Unduh</a></td>
                                         <td><a target="_blank" href="<?= base_url("uploads/$item->kartu_keluarga"); ?>">Unduh</a></td>
                                         <td><a target="_blank" href="<?= base_url("uploads/$item->ktp_ortu"); ?>">Unduh</a></td>
+                                        <td><?= $item->tahun_ajaran ?></td>
                                         <td><?= $item->status_diterima ?></td>
                                         <td><?= $item->tanggal_diterima ? date('d/m/y', strtotime($item->tanggal_diterima)) : '' ?></td>
                                         <td>
+                                            <a href="<?= base_url("ppdb/delete/$item->id_siswa"); ?>" class="btn btn-outline-danger">
+                                                Hapus
+                                            </a>
                                             <?php if (!$item->status_diterima): ?>
                                                 <a href="<?= base_url("ppdb/penerimaan/diterima/$item->id_siswa"); ?>" class="btn btn-outline-primary">
                                                     <i class="ti ti-circle-check"></i> Terima

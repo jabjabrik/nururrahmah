@@ -98,6 +98,7 @@ class Profil extends CI_Controller
 			'pendidikan_terakhir' => $this->input->post('pendidikan_terakhir'),
 			'penghasilan_wali' => $this->input->post('penghasilan_wali'),
 
+			'tahun_ajaran' => get_tahun_ajaran(),
 			'status_diterima' => NULL,
 			'tanggal_diterima' => NULL,
 		];

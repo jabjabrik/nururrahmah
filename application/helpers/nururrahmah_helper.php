@@ -42,3 +42,21 @@ function set_toasts($message, $color)
     );
     $CI->session->set_flashdata('toasts', $params);
 }
+
+function get_tahun_ajaran()
+{
+
+    $tanggalSekarang = new DateTime();
+    $tahun = (int) $tanggalSekarang->format('Y');
+    $bulan = (int) $tanggalSekarang->format('m');
+
+    // Logika tahun ajaran
+    if ($bulan >= 7) {
+        $awal = $tahun;
+    } else {
+        $awal = $tahun - 1;
+    }
+    $akhir = $awal + 1;
+
+    return $awal . '/' . $akhir;
+}

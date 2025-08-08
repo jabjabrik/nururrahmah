@@ -64,28 +64,32 @@
                     <h2 class="text-center mb-4">Pengumuman PPDB</h2>
                     <!-- Daftar Siswa -->
                     <div class="row" id="siswaContainer">
-                        <?php foreach ($pengumuman as $item): ?>
-                            <div class="col-md-6 mb-4 siswa-item">
-                                <div class="card card-siswa text-white h-100 <?= $item->status_diterima == 'diterima' ? 'status-diterima' : 'status-tidak-diterima' ?>">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="card-title text-black"><?= $item->nama_lengkap ?></h5>
-                                            <span class="badge <?= $item->status_diterima == 'diterima' ? 'bg-success' : 'bg-danger' ?> badge-status">
-                                                <?= $item->status_diterima ?>
-                                            </span>
-                                        </div>
-                                        <p class="card-text">
-                                            <small class="text-black">Asal Sekolah: <?= $item->nama_sd_mi_asal ?: $item->nama_ra_tk_asal ?></small><br>
-                                        </p>
-                                        <?php if ($item->status_diterima == 'diterima'): ?>
-                                            <div class="alert alert-success mt-2 p-2">
-                                                <small class="fw-bold">Selamat anda telah diterima!</small>
+                        <?php if ($informasi->pengumuman == '1'): ?>
+                            <?php foreach ($pengumuman as $item): ?>
+                                <div class="col-md-6 mb-4 siswa-item">
+                                    <div class="card card-siswa text-white h-100 <?= $item->status_diterima == 'diterima' ? 'status-diterima' : 'status-tidak-diterima' ?>">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <h5 class="card-title text-black"><?= $item->nama_lengkap ?></h5>
+                                                <span class="badge <?= $item->status_diterima == 'diterima' ? 'bg-success' : 'bg-danger' ?> badge-status">
+                                                    <?= $item->status_diterima ?>
+                                                </span>
                                             </div>
-                                        <?php endif; ?>
+                                            <p class="card-text">
+                                                <small class="text-black">Asal Sekolah: <?= $item->nama_sd_mi_asal ?: $item->nama_ra_tk_asal ?></small><br>
+                                            </p>
+                                            <?php if ($item->status_diterima == 'diterima'): ?>
+                                                <div class="alert alert-success mt-2 p-2">
+                                                    <small class="fw-bold">Selamat anda telah diterima!</small>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <h5 class="">Pengumuman belum dibuka</h5>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,8 @@
                 <div class="page-inner">
                     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
                         <div>
-                            <h3 class="fw-bold mb-3">Pengumuman PPDB</h3>
+                            <h3 class="fw-bold mb-3">Pengumuman PPDB <?= $pengumuman == '1' ? 'Dibuka' : 'Ditutup' ?></h3>
+                            <a href="<?= base_url("ppdb/pengumuman_change/$pengumuman"); ?>" class="btn btn-sm btn-<?= $pengumuman == '1' ? 'danger' : 'primary' ?>"><?= $pengumuman == '1' ? 'Tutup' : 'Buka' ?> Pengumuman</a>
                         </div>
                     </div>
                     <div class="table-responsive">
